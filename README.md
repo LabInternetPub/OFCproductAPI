@@ -3,8 +3,8 @@
 This API has all the information about the products for the Open Food Club (OFC). You have available the following GET calls
 from the default http port (80):
 
-* GET **/api/v1/products**            --> returns the complete information of all products
-* GET **/api/vi/products/{id}**       --> returns the complete information of a single product with id
+* ~~GET **/api/v1/products**            --> returns the complete information of all products~~
+* ~~GET **/api/vi/products/{id}**       --> returns the complete information of a single product with id~~
 * GET **/api/v1/products/price**      --> returns the id and price of all products. Every call returns a different price
 * GET **/api/v1/products/{id}/price** --> returns the id and price of a single products. Every call returns a different price
 * GET **/api/v1/categories**          --> returns a list with the product categories

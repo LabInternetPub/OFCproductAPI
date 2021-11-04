@@ -9,6 +9,7 @@ import java.util.List;
 
 @RequestMapping("/api/v1")
 @RestController
+@CrossOrigin(origins = "*")
 public class GetProductsREST {
     private ProductDAO productDAO;
 
@@ -16,12 +17,12 @@ public class GetProductsREST {
         this.productDAO = productDAO;
     }
 
-    @GetMapping("/products")
+    //@GetMapping("/products")
     public List<ProductDTO> getAllProducts() {
         return productDAO.getAllProducts();
     }
 
-    @GetMapping("/products/{id}")
+    //@GetMapping("/products/{id}")
     public ProductDTO getProductById(@PathVariable String id) {
         return productDAO.getProductById(id);
     }
